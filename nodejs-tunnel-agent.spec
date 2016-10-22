@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:       %{?scl_prefix}nodejs-tunnel-agent
-Version:    0.3.0
-Release:    3%{?dist}
+Version:    0.4.3
+Release:    1%{?dist}
 Summary:    HTTP proxy tunneling agent
 License:    ASL 2.0
 URL:        https://github.com/mikeal/tunnel-agent
@@ -34,6 +34,12 @@ cp -pr index.js package.json %{buildroot}%{nodejs_sitelib}/tunnel-agent
 %doc README.md LICENSE
 
 %changelog
+* Tue Aug 23 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.4.3-1
+- Resolves: rhbz#1366491 , update
+
+* Thu Jun 09 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.3.0-4
+- Resolves: rhbz#1334856 , fixes wrong license
+
 * Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.3.0-3
 - Add license and readme
 
